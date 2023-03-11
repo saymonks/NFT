@@ -1,0 +1,103 @@
+.popular
+  color: $light
+  padding-bottom: 132px
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 60px
+  &__titles
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+  &__title
+    margin: 36px 0px 0px 0px
+  &__all
+    padding: 12px 24px
+    font-weight: 500
+    font-size: 14px
+    line-height: 14px
+  &__button
+    font-weight: 500
+    font-size: 14px
+    line-height: 14px
+    padding: 12px 24px
+    border-radius: 8px
+    color: $light
+    background: $background
+    border: none
+  &-wrapper
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &-card
+    padding: 24px
+    background: #1E1B33
+    max-width: 312px
+    border: 1px solid rgba(231, 235, 238, 0.4)
+    border-radius: 12px
+    position: relative
+    margin: 2px 21px 21px 2px
+    &:hover
+      border: 1px solid transparent
+      transition: 0.5s linear
+    &:before
+      content: ''
+      position: absolute
+      top: -2px
+      bottom: -2px
+      left: -2px
+      right: -2px
+      border-radius: 14px
+      background: $gradient
+      opacity: 0
+      transition: opacity 0.5s linear
+      z-index: -1
+  &-card
+    &:hover
+      &::before
+        opacity: 1
+    &:nth-child(4n)
+      margin-right: 0px
+    &__image
+      max-width: 264px
+      height: 232px
+      object-fit: cover
+      border-radius: 12px
+    &__title
+      font-weight: 500
+      font-size: 24px
+      line-height: 120%
+      margin: 20px 0px 20px 0px
+    &__term
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-bottom: 24px
+      border-bottom: 1px solid rgba(231, 231, 231, 0.24)
+    &__text
+      font-weight: 400
+      font-size: 14px
+      line-height: 16px
+      color: rgba(3, 219, 128, 0.4)
+    &__like
+      display: flex
+      align-items: center
+    &__icon
+      height: 14px
+      width: 14px
+    &__amount
+      font-weight: 500
+      font-size: 14px
+      margin-left: 4px
+    &__button
+      padding: 12px 24px
+      font-weight: 500
+      font-size: 14px
+      line-height: 14px
+      color: inherit
+      background-color: $item
+      border: 0.5px solid rgba(231, 231, 231, 0.4)
+      border-radius: 8px
+      margin-top: 24px

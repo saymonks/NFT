@@ -1,0 +1,95 @@
+.selected
+  color: $light
+  padding: 130px 0px 110px 0px
+  position: relative
+  &__titles
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+  &__title
+    margin: 36px 0px 0px 0px
+  &-wrapper
+    display: flex
+    padding: 60px 0px 0px 0px
+    align-items: center
+    flex-wrap: wrap
+  &-card
+    padding: 24px
+    background-color: $item
+    border-radius: 12px
+    margin-right: 24px
+    margin-bottom: 24px
+    &:nth-child(4n)
+      margin-right: 0px
+    &__image
+      max-width: 264px
+      height: 232px
+      object-fit: cover
+      border-radius: 8px
+    &__title
+      font-weight: 500
+      font-size: 24px
+      line-height: 120%
+      margin: 0
+    &__block
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 24px 0px 20px 0px
+    &__online
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__icon
+      margin-right: 4px
+    &__users
+      position: relative
+      width: 60px
+      height: 24px
+    &__user
+      width: 24px
+      height: 24px
+      border: 1px solid #FFFFFF
+      border-radius: 100%
+      position: absolute
+    &__youth
+      left: 0
+    &__man
+      left: 18px
+    &__girl
+      right: 0px
+    &__button
+      width: 100%
+      padding: 12px 0px
+      border: 1px solid rgba(231, 231, 231, 0.4)
+      border-radius: 8px
+      color: inherit
+      background: $item
+      margin-top: 24px
+      overflow: hidden
+      position: relative
+      z-index: 1
+      &:hover
+        border: 1px solid transparent
+        transition: 0.5s linear
+      &:before
+        position: absolute
+        content: ''
+        background: $gradient
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        transition: opacity 0.5s linear
+        opacity: 0
+        z-index: -1
+    &__button
+      &:hover
+        &:before
+          opacity: 1
+  &__light
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1

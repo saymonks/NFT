@@ -1,0 +1,89 @@
+.footer
+  color: $light
+  padding-top: 100px
+  &-wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding-bottom: 99px
+  &__title
+    font-weight: 500
+    font-size: 24px
+    line-height: 28px
+    margin: 0px 0px 32px 0px
+  &__ul
+    list-style-type: none
+    padding: 0
+  &__item
+    margin-bottom: 12px
+  &__link
+    text-decoration: none
+    color: inherit
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      height: 1px
+      width: 0%
+      background: $gradient
+  &__link
+    &:hover
+      &::before
+        width: 100%
+        transition: 0.25s
+  &__paragraph
+    font-weight: 400
+    font-size: 16px
+    line-height: 20px
+    max-width: 320px
+    margin: 0px 0px 36px 0px
+  &__form
+    max-width: 371px
+    margin-bottom: 40px
+    position: relative
+  &__input
+    padding: 20px 140px 20px 20px
+    background-color: $item
+    border-radius: 8px
+    border: none
+    outline: none
+    color: inherit
+  &__button
+    position: absolute
+    padding: 20px 45px
+    font-weight: 600
+    font-size: 16px
+    line-height: 18px
+    border-top-left-radius: 0px
+    border-bottom-left-radius: 0px
+    right: 0px
+    top: 0
+  &__social
+    max-width: 164px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__nav
+    padding: 28px 0px
+    background-color: $item
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-link
+      margin-right: 47px
+      text-decoration: none
+      color: inherit
+      font-weight: 400
+      font-size: 20px
+      line-height: 24px
+      &:last-child
+        margin-right: 0px
+    &-text
+      color: $gray
+      font-weight: 400
+      font-size: 20px
+      line-height: 24px

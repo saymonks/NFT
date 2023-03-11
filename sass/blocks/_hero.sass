@@ -1,0 +1,156 @@
+.hero
+  padding: 52px 0px 98px 0px
+  position: relative
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-content
+    color: $light
+    max-width: 739px
+    padding: 0px
+  &__right
+    position: relative
+  &__title
+    font-weight: 700
+    font-size: 64px
+    line-height: 80px
+    margin: 0px 0px 20px 0px
+  &__gradient
+    background: $purple-gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    letter-spacing: -0.014em
+  &__paragraph
+    font-weight: 300
+    font-size: 24px
+    line-height: 156%
+    margin: 0px 0px 40px 0px
+  &__button
+    &-explore
+      padding: 12px 32px
+    &-create
+      padding: 12px 32px
+      border-radius: 8px
+      border: none
+      background-color: $item
+      color: $light
+      margin-left: 12px
+  &__link
+    text-decoration: none
+    color: $light
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    &-wrapper
+      display: flex
+      align-items: center
+      margin-top: 40px
+  &__icon
+    margin-right: 8px
+  &__ellipse
+    &-top
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 156px
+      height: 156px
+      border-radius: 100%
+      border: 1px solid $decoration
+      position: absolute
+      top: 320px
+      left: 616px
+    &-bottom
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 86px
+      height: 86px
+      border-radius: 100%
+      border: 1px solid $decoration
+      position: absolute
+      top: 414px
+      left: 520px
+  &__stipple
+    &-top
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 136px
+      height: 136px
+      border: 1px dashed $decoration
+      border-radius: 100%
+    &-bottom
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 74.97px
+      height: 74.97px
+      border: 1px dashed $decoration
+      border-radius: 100%
+  &__planets
+    width: 128px
+    height: 128px
+    border-radius: 100%
+    transform: rotate(17.4deg)
+    object-fit: cover
+  &__tree
+    width: 70.56px
+    height: 70.56px
+    border-radius: 100%
+    transform: rotate(17.4deg)
+    object-fit: cover
+  &__light
+    position: absolute
+    top: 0
+    left: -100px
+  &__polygon
+    position: absolute
+    top: 5px
+    left: 730px
+  &__rectangle
+    &-top
+      position: absolute
+      left: 135px
+      top: 40px
+    &-bottom
+      position: absolute
+      left: 400px
+      top: 530px
+  &__image
+    max-width: 466px
+    height: 618px
+    object-fit: cover
+    border-radius: 8px
+.swiper
+  &-button
+    &--next
+      width: 86px
+      height: 86px
+      position: absolute
+      top: 266px
+      background: $dark
+      right: 423px
+      border: none
+      border-radius: 100%
+      z-index: 99
+      background-image: url(../image/arrow.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 48px
+  &__planets
+    max-width: 466px
+    height: 618px
+    object-fit: cover
+  &-pagination
+    bottom: 0px
+    &-bullet
+      width: 16px
+      height: 8px
+      background-color: $light-gray
+      border-radius: 100px
+      opacity: 1
+      transition: 0.5s
+      &-active
+        background: $gradient
+        width: 41px

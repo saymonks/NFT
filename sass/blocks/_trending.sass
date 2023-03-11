@@ -1,0 +1,132 @@
+.trending
+  color: $light
+  position: relative
+  padding-bottom: 132px
+  &__titles
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    margin-bottom: 60px
+  &__title
+    margin: 36px 0px 0px 0px
+  &-wrapper
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &-card
+    padding: 24px
+    background: $item
+    max-width: 312px
+    border: 1px solid rgba(231, 235, 238, 0.4)
+    border-radius: 12px
+    position: relative
+    margin: 2px 21px 21px 2px
+    &:hover
+      border: 1px solid transparent
+      transition: 0.5s linear
+    &:before
+      content: ''
+      position: absolute
+      top: -2px
+      bottom: -2px
+      left: -2px
+      right: -2px
+      border-radius: 14px
+      background: $gradient
+      opacity: 0
+      transition: opacity 0.5s linear
+      z-index: -1
+  &-card
+    &:hover
+      &::before
+        opacity: 1
+    &:nth-child(4n)
+      margin-right: 0px
+    &__image
+      max-width: 264px
+      height: 232px
+      object-fit: cover
+      border-radius: 8px
+    &__block
+      display: flex
+      padding: 20px 0px 8px 0px
+    &__icon
+      margin-left: 4px
+    &__text
+      font-weight: 400
+      font-size: 14px
+      line-height: 16px
+      margin: 0
+    &__title
+      font-weight: 500
+      font-size: 24px
+      line-height: 120%
+      margin: 0px 0px 16px 0px
+    &__wrapper
+      max-width: 264px
+      border: 0.5px solid rgba(231, 231, 231, 0.4)
+      border-radius: 8px
+      padding: 16px
+    &__rate
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      text-transform: capitalize
+      color: $gray
+      margin-bottom: 10px
+    &__sale
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-weight: 400
+      font-size: 14px
+      line-height: 14px
+      text-transform: capitalize
+    &__top
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 104px
+      position: absolute
+      top: 40px
+      right: 40px
+    &__reload
+      padding: 9px 12px
+      background: rgba(30, 27, 51, 0.72)
+      border-radius: 4px
+    &__like
+      display: flex
+      align-items: center
+      padding: 6px 12px
+      background: rgba(30, 27, 51, 0.72)
+      border-radius: 4px
+      margin-left: 8px
+    &__amount
+      font-weight: 500
+      font-size: 14px
+      line-height: 18px
+      margin-left: 4px
+    &__button
+      padding: 16px 40px
+      position: absolute
+      right: 50%
+      top: 194px
+      transform: translateX(50%)
+  &__light
+    position: absolute
+    right: 0
+    top: 0
+    z-index: -1
+  &-swiper
+    .swiper-pagination
+      width: 648px
+      left: 50%
+      transform: translateX(-50%)
+    .swiper-pagination-bullet
+      border-radius: 0px
+      height: 1px
+      width: 45%
